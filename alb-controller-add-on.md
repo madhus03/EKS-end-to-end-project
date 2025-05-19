@@ -1,13 +1,13 @@
-STEP BY STEP INSTRCUTIONS ON SETTING UP alb add on & DEPLOYING ALB CONTROLLER
+# STEP BY STEP INSTRCUTIONS ON SETTING UP alb add on & DEPLOYING ALB CONTROLLER
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ALB SET UP 
+## ALB SET UP 
 
-1. Download IAM POLICY 
+### 1. Download IAM POLICY 
 
 `curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.11.0/docs/install/iam_policy.json`
 
-2. Create IAM Policy
+### 2. Create IAM Policy
 
 ```bash
 aws iam create-policy \
@@ -16,7 +16,7 @@ aws iam create-policy \
 ```
 
 
-3. Create IAM Role    
+### 3. Create IAM Role    
 
 ```bash
 eksctl create iamserviceaccount \
@@ -29,17 +29,17 @@ eksctl create iamserviceaccount \
 ```
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Deploy ALB controller
+## Deploy ALB controller
 
-1. Add helm repo 
+### 1. Add helm repo 
 
 `helm repo add eks https://aws.github.io/eks-charts`
 
-2. Update the repo 
+### 2. Update the repo 
 
 `helm repo update eks`
 
-3. Install 
+### 3. Install 
 
 ```bash
 helm install aws-load-balancer-controller eks/aws-load-balancer-controller \            
@@ -51,7 +51,7 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
   --set vpcId=<your-vpc-id>`
 ```
 
-4. verify that the deployments are running 
+### 4. verify that the deployments are running 
 
 `kubectl get deployment -n kube-system aws-load-balancer-controller`
 
