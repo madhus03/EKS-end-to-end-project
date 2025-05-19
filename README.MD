@@ -1,3 +1,7 @@
+Follow the entire documentation on medium - https://medium.com/@mathangi2197/deploying-a-serverless-2048-game-using-aws-eks-and-fargate-2587338c2440
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Setting up your AWS Environment for EKS
 
 1.1 Configuring the AWS CLI and kubectl
