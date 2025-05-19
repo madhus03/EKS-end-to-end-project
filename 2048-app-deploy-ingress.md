@@ -1,4 +1,4 @@
-1. How to create a Fargate profile 
+# 1. How to create a Fargate profile 
 
 ```bash
      eksctl create fargateprofile \
@@ -9,7 +9,7 @@
 ```
 
 
-2. Deploy the deployment, service and ingress as a single YAML file and host that YAML file online. 
+# 2. Deploy the deployment, service and ingress as a single YAML file and host that YAML file online. 
 to do that :
 
 - Login to your github account 
