@@ -1,19 +1,9 @@
 STEP BY STEP INSTRCUTIONS ON SETTING UP alb add on & DEPLOYING ALB CONTROLLER
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ALB SET UP 
 
 1. Download IAM POLICY 
-
-
-`curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.11.0/docs/install/iam_policy.json`
-
-2. Create IAM Policy
-
-`aws iam create-policy \
-    --policy-name AWSLoadBalancerControllerIAMPolicy \
-    --policy-document file://iam_policy.json`
-
-3. Create IAM Role    
-
-`eksctl create iamserviceaccount \`
 
 `curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.11.0/docs/install/iam_policy.json`
 
@@ -32,6 +22,8 @@ STEP BY STEP INSTRCUTIONS ON SETTING UP alb add on & DEPLOYING ALB CONTROLLER
   --role-name AmazonEKSLoadBalancerControllerRole \
   --attach-policy-arn=arn:aws:iam::<your-aws-account-id>:policy/AWSLoadBalancerControllerIAMPolicy \
   --approve`
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Deploy ALB controller
 
