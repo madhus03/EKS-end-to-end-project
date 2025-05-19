@@ -14,7 +14,7 @@ Setting up your AWS Environment for EKS
 
 - Open a terminal or command prompt and run the following command:
 
-`aws configure`
+```bash aws configure```
 
 - Enter the access key ID and secret access key of the IAM user you created earlier.
 - Choose a default region and output format for AWS CLI commands.
