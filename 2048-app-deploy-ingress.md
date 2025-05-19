@@ -1,10 +1,10 @@
 how to create a Fargate profile 
 
-```eksctl create fargateprofile \
+`eksctl create fargateprofile \
     --cluster demo-cluster \
     --region us-east-1 \
     --name alb-sample-app \
-    --namespace game-2048```
+    --namespace game-2048`
 
 
 Deploy the deployment, service and ingress as a single YAML file and host that YAML file online. 
