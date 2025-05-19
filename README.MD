@@ -31,10 +31,14 @@ aws configure
 - In the AWS Management Console, go to the EKS service and select your cluster.
 - Click on the "Config" button and follow the instructions to update your kubeconfig file. - Alternatively, you can use the AWS CLI to update the kubeconfig file:
 
-`aws eks update-kubeconfig --name your-cluster-name`
+```bash
+aws eks update-kubeconfig --name your-cluster-name
+```
 
 - Verify the configuration by running a kubectl command against your EKS cluster:
 
-`kubectl get nodes`
+```bash
+kubectl get nodes
+```
 
 
