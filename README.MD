@@ -2,7 +2,7 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Setting up your AWS Environment for EKS#
+#Setting up your AWS Environment for EKS
 
 1. Configuring the AWS CLI and kubectl
 
